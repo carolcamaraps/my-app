@@ -1,23 +1,18 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import Search from "./Search";
 import City from "./City";
-import Credits from "./Credits"
+import Credits from "./Credits";
 import Info from "./Info";
 import Temperature from "./Temperature";
 import Weather from "./Weather";
-import App from "./App";
 
 import "./App.css";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
+export default function App() {
+  return (
     <div className="container">
       <Search />
       <City cityName="Rio de Janeiro" />
@@ -26,7 +21,6 @@ root.render(
       <Weather wind="wind: 6 km/h" humidity="humidty: 73%" />
       <Credits />
     </div>
-  </StrictMode>
-);
+  );
+}
 
-export default App;

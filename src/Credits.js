@@ -4,7 +4,7 @@ import "./App.css";
 
 export default function Credits() {
   return (
-    <small class="footnote">
+    <small className="footnote">
       This project was coded by Carolina Câmara as part of her{" "}
       <a
         href="https://www.shecodes.io/workshops"
@@ -21,7 +21,6 @@ export default function Credits() {
       >
         Open-sourced on GitHub
       </a>{" "}
-      .
     </small>
   );
 }
